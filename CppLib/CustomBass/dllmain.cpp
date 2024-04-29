@@ -8,7 +8,7 @@ void NSISCALL PlayMusic(const char* filename) {
         BASSLib::HSTREAM stream_line = BASSLib::BASS_StreamCreateFile(false, (const WCHAR*)filename, 0, 0, BASS_SAMPLE_LOOP);
         if (stream_line)
         {
-            BASSLib::BASS_ChannelPlay(stream_line, true);
+            BASSLib::BASS_ChannelPlay(stream_line, false);
         }
     }
 
